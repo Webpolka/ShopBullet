@@ -196,3 +196,4 @@ export default class ShopBullet {
     this.container.children[1].insertAdjacentHTML("beforebegin", html);
   }
 }
+
