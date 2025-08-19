@@ -7,5 +7,15 @@
 			@@include('html/sections/content.html')
 		</div>
 		@@include('html/components/script.html')
+
+		<script>
+			const allShopBullets = document.querySelectorAll(".shopBullet");
+			allShopBullets.forEach((shopBullet) => {
+				new ShopBullet(shopBullet, {
+					lazyLoad: true,
+					bulletHover: "red",
+				});
+			});
+		</script>
 	</body>
 </html>
